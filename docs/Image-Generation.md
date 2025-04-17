@@ -1,20 +1,19 @@
 **This guide is focused on nascent technology. As a result, contents
 might be highly volatile.**
 
-Anlatan already provides an in-depth guide to using their Image
-Generation service [here](https://docs.novelai.net/). It is highly
-recommended you read it thoroughly because it explains every
-functionality and all pieces of the UI in great detail.
+Anlatanは画像生成サービスに関する詳細なガイドを公開しています。
+ [こちら](https://docs.novelai.net/). 
+これについてしっかり目を通すことをオススメします。
+このガイドは、すべての機能とUIの構成要素について、非常に詳細に解説しているので。
 
-You should also read [Traveling Robot's research
+また、 [Traveling Robot's research
 notes](https://github.com/TravelingRobot/NAI_Community_Research/wiki/NAI-Diffusion:-Various-Tips-&-Tricks)
-as well. This guide expounds on some of them.
+も良い参考になります。このガイドは公式ガイドの内容をさらに掘り下げています。
 
-This guide aims to provide with more in depth information for power
-users.
+このガイドの目的は、上級ユーザー向けに、より深い情報を提供することです。
 
-**For people looking for the magic voodoo to create NSFW artwork: Add
-NSFW to the prompt. Anywhere.**
+**NSFW作品を作りたい人への魔法の呪文：
+プロンプトに「NSFW」を足しましょう。それだけ。**
 
 # How is the AI trained?
 
