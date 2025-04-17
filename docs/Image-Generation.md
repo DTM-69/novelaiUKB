@@ -1,8 +1,7 @@
 **This guide is focused on nascent technology. As a result, contents
 might be highly volatile.**
 
-Anlatanは画像生成サービスに関する詳細なガイドを公開しています。
- [こちら](https://docs.novelai.net/). 
+Anlatanは画像生成サービスに関する詳細なガイドを公開しています。 [こちら](https://docs.novelai.net/). 
 これについてしっかり目を通すことをオススメします。
 このガイドは、すべての機能とUIの構成要素について、非常に詳細に解説しているので。
 
