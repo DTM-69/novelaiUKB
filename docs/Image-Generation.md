@@ -16,10 +16,22 @@ notes](https://github.com/TravelingRobot/NAI_Community_Research/wiki/NAI-Diffusi
 
 # AIはどうやって訓練されている？
 
-The AI was trained on tagged images, based on the Danbooru standard.
-Boorus are "imageboards", sites where large amounts of images are saved in order to catalogue the body of work of artists. This stemmed from a difficulty to find and archive art reliably, as Japanese artists have a very different relationship with their works than Western cultures do.
+このAIは、「Danbooru」の規格に基づいたタグ付き画像によってトレーニングされました。  
+Booruというのは、アーティストの作品を整理分類するための画像掲示板サイトのことです。  
+このようなサイトは、欲しいイラストを確実に見つけて保存するのが困難だったため生まれました。  
+日本のアーティストと西洋のアーティストでは自作の扱い方が違うというのも、その一因です。
 
-As a result, these sites were created to host as many images as possible, and make them easy to find by applying tags. These tags describe elements of the image, such as character design elements (hair, eyes, etc), poses, objects, and much more.
+その結果、こうしたBooruサイトでは、できるだけ多くの画像をホストし、タグを用いることで簡単に検索できるようになっています。  
+タグは、キャラクターデザインの要素（髪型、目の色など）やポーズ、小物など、画像のあらゆる要素を記述します。
+
+学習には「クオリティ学習」と「審美的学習（Aesthetic training）」の2つの段階があります。これについては次のセクションで解説します。
+
+なお、Danbooruのタグデータベースを調べるつもりの人は、このサイトは非常にNSFW（職場などでの閲覧に適さない内容）であることを忘れないでください！
+
+もし「Furryモデル」を使っている場合は、E621のタグを使う必要があります。
+このタグはV4モデルでもある程度使えますが、以下の情報はFurryモデルには適用されません。
+E621も、Danbooruと同じく非常にNSFWです。
+
 
 There are two parts to training: Quality training, and Aesthetic training. This will be explained in the next section.
 
