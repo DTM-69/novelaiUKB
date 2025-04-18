@@ -42,18 +42,25 @@ This means all the following information will not work for this specific model. 
 
 ***
 
-# Diffusion Models
+# 拡散モデル
 
-A diffusion model works by resolving noise into an image. If you ever used a photo editing tool to remove noise from an image, the idea is the same, except pushed to its logical extreme. You are giving the AI nothing *but* noise, and ask it to denoise it into a full image.
+拡散モデル（diffusion model）は、ノイズから画像を復元していくことで動作します。  
+写真編集ソフトで「ノイズの軽減」をしたことがあれば、基本的な考え方はそれと同じですが、この場合はその原理を突き詰めた極端な形になります。
+AIにはノイズだけを与え、そこからノイズを除去して完全な画像を作り出すのです。
 
-This has several implications:
+いくつかの注意点があります：
 
-• The AI has **no grasp** of the position and boundaries of image elements. It knows what it's trying to make, but it does not know where things start and end *exactly*.
+- AIは画像内の要素の位置や境界線を**正確に把握はしていません**。
+何を作ろうとしているかは理解していますが、それがどこからどこまでなのか、厳密には分かっていないのです。
 
-• The AI does not have pure semantic understanding of tags. It just knows that this tag tends to lead to those shapes and those colors. It does not understand what hair *is*, but just how it *looks* and how it is usually drawn.
+- AIは、タグの意味を厳密に理解しているわけではありません。  
+あるタグがあると、だいたいこういう形や色になる、という統計的な傾向を知っているだけです。  
+つまり、AIは「髪の毛とは*何か*」を理解しているのではなく、「髪の毛が*どう見えるか*」「どう描かれがちか」を知っているだけなのです。
 
-• For older models, the AI does not know what applies to what in the image, this means you can't tell it "I want this, but ONLY for this character". This is why it can struggle with multiple characters in long prompts. **For V4, you have character tagging, but it is not perfect. Sometimes, the character may merge together.**
-
+- 古いモデルでは、何がどのキャラクターに対応しているのかすら把握していません。  
+そのため、「これをこのキャラにだけ適用してほしい」といった指定ができず、複数キャラを含む長いプロンプトでは破綻しやすくなります。  
+**V4ではキャラクターごとのタグ指定が可能ですが、完璧ではありません。ときどきキャラ同士が混ざってしまうこともあります。**
+ 
 ## Noise V. Sampler:  Steps, Scale/Guidance and Seed
 
 Diffusion models work by using Steps to resolve noise. The more steps, the more compute is used, (which is why the Anlas cost goes up with steps). Most NAI models were trained from **Stable Diffusion** models. V4 is an inhouse model.
